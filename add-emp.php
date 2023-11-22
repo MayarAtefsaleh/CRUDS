@@ -1,5 +1,7 @@
 <?php include 'header.php' ?>
 <?php include 'navbar.php' ?>
+<link href="starter-template.css" rel="stylesheet">
+
 
 
 <?php
@@ -56,7 +58,7 @@ if (isset($_POST['submit'])) {
 
         <div class="col text-center">
 
-            <h2 class="bg-light p-3" style="color:#F64A8A;">
+            <h2 class="bg-light p-3 border rounded" style="color:#F64A8A;">
                 Add new employee
             </h2>
 
@@ -68,7 +70,7 @@ if (isset($_POST['submit'])) {
 
     <div class="row">
         <div class="col">
-            <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
+            <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>" class="bg-light p-5 border rounded">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Name</label>
                     <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"

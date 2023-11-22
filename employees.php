@@ -1,10 +1,11 @@
 <?php include 'header.php' ?>
 <?php include 'navbar.php' ?>
+<link href="starter-template.css" rel="stylesheet">
 
 <div class="container pt-5">
     <div class="row">
         <div class="col text-center">
-            <h2 class="bg-light p-3" style="color:#F64A8A;">All Employees</h2>
+            <h2 class="bg-light p-3 border rounded" style="color:#F64A8A;">All employees</h2>
         </div>
     </div>
 
@@ -19,7 +20,7 @@
     <div class="row">
         <div class="col text-center">
             <?php if (count($employees)): ?>
-            <table class="table table-dark table-striped-columns">
+            <table class="table table-dark table-striped-columns table-hover border">
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
